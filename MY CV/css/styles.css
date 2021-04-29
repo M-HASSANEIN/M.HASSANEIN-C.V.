@@ -59,7 +59,7 @@ body {
   margin-top: -1.5em;
   height: 20em;
   transform: skewX(-30deg) rotate(-90deg);
-  background: url(photo.jpg);
+  background: url(../img/photo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
