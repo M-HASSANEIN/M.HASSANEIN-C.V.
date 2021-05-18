@@ -59,7 +59,7 @@ body {
   margin-top: -1.5em;
   height: 20em;
   transform: skewX(-30deg) rotate(-90deg);
-  background: url(../img/photo.jpg);
+  background: url(../img/photo2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,7 +71,7 @@ body {
 
 .resume .resume_left {
   background: #2F4F4F;
-  padding: 25px;
+  padding: 5px;
   box-shadow: 10px -1px 5px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px -1px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px -1px 5px -2px rgba(0,0,0,0.75);
@@ -288,8 +288,8 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: -55px;
-  width: 55px;
+  right: -65px;
+  width: 65px;
   height: 2px;
   background: #a6875b;
 }
