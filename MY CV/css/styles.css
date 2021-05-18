@@ -28,7 +28,7 @@ body {
 }
 
 .resume {
-  width: 1200px;
+  width: 1100px;
   display: flex;
   margin: auto;
 }
@@ -112,10 +112,11 @@ body {
 
 .resume .resume_left .regular {
   color:white;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 10px 0px;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .resume .resume_item {
@@ -260,10 +261,12 @@ body {
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 140px;
+  height: 350px;
   background: #a6875b;
 }
-
+.resume .resume_right .resume_work .competence li::after{
+  background-color:initial;
+}
 .resume .resume_right .resume_hobby ul {
   display: flex;
   justify-content: space-between;
@@ -285,8 +288,8 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: -80px;
-  width: 80px;
+  right: -55px;
+  width: 55px;
   height: 2px;
   background: #a6875b;
 }
