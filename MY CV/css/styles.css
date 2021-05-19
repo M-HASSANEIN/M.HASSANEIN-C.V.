@@ -298,14 +298,66 @@ body {
   display: none;
 }
 
-button {
-  position:sticky;
-  left: 10px;
-  bottom: 500px;
-  border: none;
+.ref {
+  position: fixed;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button{
+  margin-bottom: 20px;
+}
+button,
+.dropbtn{
+  padding: 10px;
   background-color: #2F4F4F;
-  padding: 20px;
+  margin-left: 10px;
+  color: #a6875b;
+  border: none;
   cursor: pointer;
-  color: white;
-  font-size: 1rem;
+  
+}
+.dropbtn{
+  padding-left: 35px;
+  margin-top: 10px;
+}
+.fa-caret-down{
+margin-left: 10px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  visibility: hidden; 
+  opacity: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  overflow: auto;
+  z-index: -1;
+  margin: 10px;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+  visibility: visible; 
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; 
 }
