@@ -1,20 +1,35 @@
-let lag= document.getElementById("lang");
-let cv = document.querySelector(".cv");
-
-console.log(cv)
+let lag= document.querySelector(".dropbtn");
+let myDropdown= document.getElementById("myDropdown");
 
 
-function onclick() {
-    document.getElementById("myDropdown").classList.toggle("show");  
+
+function onclick() 
+{
+ myDropdown.classList.toggle("show");  
 }
-function rembtn() {
-    /* openDropdown.classList.remove('show'); */
-    /* document.getElementById("myDropdown").classList.remove("show");  */
+
+function offclick(event) 
+{
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) 
+    {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
+
+
+
 
 //FUNCTION UPLOAD AFTER PAGE LOADED
 document.addEventListener("DOMContentLoaded" , function()
 { 
       lag.addEventListener("click",onclick);
-      cv.addEventListener("click",rembtn);
+    // Close the dropdown if the user clicks outside of it
+      window.addEventListener("click",offclick)  
 });     
