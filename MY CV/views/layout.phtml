@@ -6,24 +6,29 @@
     <!-- Favicons -->
     <link href="assets/img/logo.png" rel="icon">
     <title>M.HASSANEIN</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
-<body class="cv">
-    <?php include $template;?>
-</body>
-<div class="ref">
-    <button onclick="window.print()"> <i class="fas fa-print"></i> Print C.V.</button>
-    <div class="dropdown">
-        <a class="dropbtn">lang <i class="fas fa-caret-down"></i> </a>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="french"> Français</a>
-            <a href="english"> English</a>
-            <!-- <a href="arabic">Arabic</a> -->
+<body>
+    <header></header>
+    <div class="ref">
+        <button onclick="window.print()"> <i class="fas fa-print"></i></button>
+        <div class="dropdown">
+            <a class=""><i class="fas fa-language dropbtn "></i> </a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="french"> Fr</a>
+                <a href="english"> En</a>
+            </div>
         </div>
     </div>
-</div>
+    <main>
+        <?php include $template;?>
+    </main>
+    <footer></footer>
+</body>
+
 <script src="assets/js/script.js"></script>
 
 </html>
