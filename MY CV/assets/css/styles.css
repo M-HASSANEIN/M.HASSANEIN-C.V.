@@ -16,8 +16,8 @@ html{
   font-size: 63.5%;
 }
 body {
-  font-size: 1.4rem;
-  line-height: 22px;
+  font-size: 1.6rem;
+  line-height: 20px;
 }
 
 html, body { 
@@ -73,7 +73,6 @@ button,
   background-color: #f1f1f1;
 }
 
-
 button:hover,
 .dropdown .dropbtn:hover {background-color: #ddd;}
 
@@ -92,12 +91,10 @@ button:hover,
   transition-delay: 0s, 0s, 0.3s; 
 }
 
-
 .bold {
   font-weight: 700;
   font-size: 2.2rem;
   color: #2F4F4F;
- 
 }
 
 .semi-bold {
@@ -114,15 +111,16 @@ button:hover,
 }
 .r-hex {
   overflow: hidden;
-  display: block; 
   margin-top: 50px;
-  margin-left: 50px;
-  width: 20em; height: 17.32em;
+  width: 100%;
+  height: 17.32em;
   transform: rotate(-30deg) skewX(30deg);
   border-radius: .5em;
+  padding: 0px;
 }
 .r-hex *, .r-hex *:before {
-  display: block;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   width: inherit; height: inherit;
   border-radius: inherit;
@@ -145,7 +143,6 @@ button:hover,
   line-height: 20em;
   text-align: center;
   content: '';
-  
 }
 .r-hex-inner:hover { opacity: 0.75; }
 
@@ -161,13 +158,6 @@ button:hover,
 .resume .resume_left .resume_profile {
   width: 100%;
   height: 280px;
-}
-
-.resume .resume_left .resume_profile img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .resume .resume_left .resume_content {
@@ -304,7 +294,7 @@ button:hover,
 }
 
 .resume .resume_right ul li .date {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -351,7 +341,6 @@ button:hover,
 
 .resume .resume_right .resume_hobby ul li {
   color: #a6875b;
-  font-size: 1.5rem;
   display: flex;
   margin: 20px;
 }
@@ -360,8 +349,8 @@ button:hover,
  font-weight: bolder;
 }
 .resume .resume_right .resume_hobby ul li i {
-  font-size: 3rem;
   margin-right: 10px;
+  font-size: 4rem;
 }
 
 /*************footer************************/
@@ -372,31 +361,59 @@ footer{
 
 /************media*************************/
 @media only screen and (max-width: 992px) {
+  
+  button,
+ .dropbtn{
+  background: none;
+  font-size: 3.5rem;
+  }
+
+  button:hover,
+ .dropdown .dropbtn:hover {
+  color: #2F4F4F;
+  background: none;
+ }
+
   .resume {
-    margin-top: 0px;
-    display: block;
+   display: block;
+   margin-top:0px;
   }
-  .r-hex {
-    margin-left: 0px;
+  .resume .resume_left ul li .data {
+    color: #2F4F4F;
+    font-weight: bolder;
     
+}
+  .resume .resume_left .regular {
+    color: #2F4F4F;
   }
+  .resume .resume_left {
+    background: none;
+  }
+  .resume .resume_left ul  {
+   margin: auto;
+  }
+
   .ref{
    position: absolute; 
    top: 0;
    flex-direction: row;
   }
+
   .dropdown-content a:hover {
     background-color: #a6875b;
     color: #2F4F4F;
     cursor: pointer;
     z-index: 1;
   }
+
   .dropdown-content {
     margin: 0px;
   }
+
   footer{
     margin-bottom: 0px;
   }
+
 }
 @media only screen and (max-width: 600px) {
   
