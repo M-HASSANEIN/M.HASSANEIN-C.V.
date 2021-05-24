@@ -102,7 +102,7 @@ button:hover,
 
 .semi-bold {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .resume {
@@ -378,7 +378,7 @@ footer{
   }
   .r-hex {
     margin-left: 0px;
-    width: 100%;
+    
   }
   .ref{
    position: absolute; 
@@ -399,10 +399,7 @@ footer{
   }
 }
 @media only screen and (max-width: 600px) {
-  .r-hex {
-    margin-left: 0px;
-    width: 100%;
-  }
+  
   .resume {
     display: block;
   }
