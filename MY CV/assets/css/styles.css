@@ -390,7 +390,7 @@ footer{
   }
   .resume .resume_left .resume_info ul li {
     justify-content: center;
-
+    text-align: center;
   }
   .resume .resume_left .resume_skills ul li {
     color: #2F4F4F;
