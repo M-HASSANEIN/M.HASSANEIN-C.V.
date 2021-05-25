@@ -326,7 +326,7 @@ button:hover,
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 350px;
+  height: 350vh;
   background: #a6875b;
 }
 .resume .resume_right .resume_work .competence li::after{
@@ -372,7 +372,7 @@ footer{
  .dropdown .dropbtn:hover {
   color: #2F4F4F;
   background: none;
- }
+  }
 
   .resume {
   flex-direction: column;
@@ -390,10 +390,19 @@ footer{
   }
   .resume .resume_left .resume_info ul li {
     justify-content: center;
-    
+
+  }
+  .resume .resume_left .resume_skills ul li {
+    color: #2F4F4F;
+  }
+  .resume .resume_left .resume_social .semi-bold {
+    color: #2F4F4F;
+    font-weight: bolder;
+  }
+  .resume a {
+    color: #2F4F4F;
   }
   
-
   .ref{
    position: absolute; 
    top: 0;
@@ -408,10 +417,6 @@ footer{
     z-index: 1;
   }
 
-  .dropdown-content {
-    margin: 0px;
-  }
-
   footer{
     margin-bottom: 0px;
   }
@@ -422,5 +427,17 @@ footer{
   .resume {
     display: block;
   }
- 
+  button, .dropbtn {
+    padding: 0px;  
+  }
+ .dropdown-content {
+   margin: -1px;
+ }
+ .dropdown-content a {
+   margin: 5px;
+ }
+ .bold {
+  font-size: initial;
+}
+
 }
