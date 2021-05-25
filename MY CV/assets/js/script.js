@@ -32,4 +32,9 @@ document.addEventListener("DOMContentLoaded" , function()
       lag.addEventListener("click",onclick);
     // Close the dropdown if the user clicks outside of it
       window.addEventListener("click",offclick)  
+
+      window.addEventListener("load", () => {
+        document.querySelector("body").classList.add("loaded"); 
+       });
+
 });     
