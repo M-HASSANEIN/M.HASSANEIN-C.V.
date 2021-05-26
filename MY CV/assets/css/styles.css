@@ -137,10 +137,10 @@ button:hover,
   margin-top: -1.5em;
   height: 20em;
   transform: skewX(-30deg) rotate(-90deg);
-  background: url(../img/photo2.jpg);
-  background-size: contain;
+  background: url(../img/photocv.JPG);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   line-height: 20em;
   text-align: center;
   content: '';
