@@ -553,3 +553,29 @@ footer{
  
  
 }
+
+@media print {
+  html{
+    background-image:none; 
+  }
+  .resume {
+    margin-top: 0px;
+    box-shadow: none;
+   
+  }
+
+  .ref {
+      visibility: hidden !important; 
+  }
+  .resume .resume_left {
+    padding: 80px 5px 6px;
+    box-shadow: none;
+    z-index: 0;
+  }
+
+
+  footer{
+      margin-bottom: 0px;
+  }
+
+}
